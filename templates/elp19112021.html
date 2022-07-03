@@ -1,0 +1,46 @@
+{% extends 'eclipsesregistrados.html' %}
+
+{% block titulo %}
+  - Eclipse lunar parcial de 19/11/2021
+{% endblock %}
+
+{% block conteudo %}
+  <div class="m-4 m-lg-5 text-center">
+    <h1 class="display-5 fw-bold">
+      Eclipse lunar parcial de 19 de novembro de 2021
+    </h1>
+  </div>
+
+  <div class="container px-5 py-5 bg-black" style="max-width: 620px">
+    <div class="row gx-4 justify-content-center">
+      <div class="col-lg-8 text-center">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <!-- Indicadores -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          </div>
+          <!-- Fotos -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="static/eclipse_lunar_parcial_19112021/elp19112021.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>1/1</h5>
+                <p>Fenômeno registrado em Natal-RN.</p>
+              </div>
+            </div>
+            
+          <!-- Botões -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="text-center text-light"><i>Obs.: Foto única</i></p>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+  - Eclipses registrados
+{% endblock %}
+
+{% block conteudo %}
+  <header class="py-1">
+    <div class="container px-lg-1">
+      <div class="p-4 p-lg-5 bg-white rounded-3 text-center">
+        <div class="m-4 m-lg-5">
+          <h1 class="display-5 fw-bold">Eclipses registrados</h1>
+          <p class="fs-4">Aqui você verá alguns eclipses fotografados no Rio Grande do Norte</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="card text-center">
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <br>
+      <a href="/esp26fev2017" class="btn btn-primary btn-lg">Eclipse solar parcial de 26 de fevereiro de 2017</a><br>
+      <a href="/esp21ago2017" class="btn btn-primary btn-lg">Eclipse solar parcial de 21 de agosto de 2017</a><br>
+      <a href="/elt21jan2019" class="btn btn-primary btn-lg">Eclipse lunar total de 21 de janeiro de 2019</a><br>
+      <a href="/elp19nov2021" class="btn btn-primary btn-lg">Eclipse lunar parcial de 19 de novembro de 2021</a><br>
+      <a href="/elt16mai2022" class="btn btn-primary btn-lg">Eclipse lunar total de 16 de maio de 2022</a><br>
+    </div>
+  </div>
+{% endblock %}

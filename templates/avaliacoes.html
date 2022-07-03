@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    - Avaliações
+{% endblock %}
+
+{% block conteudo %}
+  <h1 class="text-center">
+    Avaliação do site
+  </h1>
+  <!-- Escolhe entre 1 e 5 estrelas para avaliar o site -->
+  {% if estrelas=='1' or estrelas=='2' or estrelas=='3' or estrelas=='4' or estrelas=='5' %}
+    <p class="text-center">
+      {% for c in range(estrelas | int) %}
+        <img src="/static/estrela.jpg" width=120px height=120px>
+      {% endfor %}
+    </p>
+  {% else %}
+    <p class="display-5 text-center">
+      Nenhuma avaliação
+    </p>
+  {% endif %}
+{% endblock %}
